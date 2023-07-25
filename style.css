@@ -98,6 +98,7 @@ html {
 
 body {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: var(--light-gray);
 }
@@ -211,10 +212,35 @@ button {
 
 
 
-
-
-
-
 @media (min-width: 900px) {
+
+.container {
+  margin: unset;
+  width: 60vw;
+  max-width: 835px;
+  height: 70vh;
+  max-height: 445px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-join {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.card-join h2 {
+  margin: 30px 20px 15px 40px;
+}
+
+.card-join h3 {
+  margin-left: 40px;
+}
+
+.card-join p {
+  padding: unset;
+  margin: 5px 30px 0 40px;
+  width: 80%;
+}
 
 }
